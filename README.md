@@ -2,6 +2,12 @@
 
 A simple password generator project from the Scrimba fullstack course.
 
+## Display Option
+
+The app includes a "toggle theme" button to switch between light and dark themes.
+
+## Core Functionality
+
 Functionality includes:
 - Choice of password length, between 8 and 20 characters;
 - Choice of character sets to include in the password generation: uppercase, numbers and symbols (lowercase always included)
@@ -9,4 +15,4 @@ Functionality includes:
 - Generation of 2 passwords according to length and character sets specifications
 - Possibility to copy each of the 2 generated passwords to clipboard
 
-The app also includes a "toggle theme" button to switch between light and dark themes.
+
