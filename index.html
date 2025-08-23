@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Scrimba Password Generator">
+	<link rel="stylesheet" href="src/css/index.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+	<title>Scrimba Password Generator Project</title>
+</head>
+<body>
+	<main>
+		<div class="wrapper">
+			<button type="button" id="toggle-theme">Toggle theme</button>
+			<h1>Generate a <br /><span>random password</span></h1>
+			<p id="support-text">Never use an insecure password again</p>
+			<fieldset id="pwd-options">
+				<legend>Password options</legend>
+				<div class="input-row">
+					<label for="pwd-length">Length:</label>
+					<input
+							type="number"
+							id="pwd-length"
+						   	value="16"
+							min="8"
+							max="20" step="1"
+							required> &nbsp <span>( between 8 and 20 )</span>
+				</div>
+				<div class="input-row">
+					<label for="lowercase">Lowercase</label>
+					<input class="charset" type="checkbox" id="lowercase" checked disabled>
+					<label for="uppercase">Uppercase</label>
+					<input class="charset" type="checkbox" id="uppercase" checked>
+					<label for="numbers">Numbers</label>
+					<input class="charset" type="checkbox" id="numbers" checked>
+					<label for="symbols">Symbols</label>
+					<input class="charset" type="checkbox" id="symbols" checked>
+				</div>
+				<p id="error-message">
+					Secure passwords should contain at least 16 characters
+					and include lowercase and uppercase letters, numbers and symbols.
+					Please consider revising your password options!
+				</p>
+			</fieldset>
+			<button type="button" id="generate">Generate passwords</button>
+			<hr />
+			<div id="result">
+				<div class="generated-password">
+					<p class="pwd" id="pwd1"> </p>
+					<button class="copy">
+						Copy to clipboard
+					</button>
+					<p class="copy-result"></p>
+				</div>
+				<div class="generated-password">
+					<p class="pwd" id="pwd2"> </p>
+					<button class="copy">
+						Copy to clipboard
+					</button>
+					<p class="copy-result">Copied</p>
+				</div>
+			</div>
+		</div>
+	</main>
+<script src="src/js/index.js" type="module"></script>
+</body>
+</html>
