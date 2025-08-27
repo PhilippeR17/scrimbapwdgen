@@ -15,4 +15,6 @@ Functionality includes:
 - Generation of 2 passwords according to length and character sets specifications
 - Possibility to copy each of the 2 generated passwords to clipboard
 
+## Further Developments
 
+Planning to change the toggle theme button to a toggle slider outside of the project main panel.
